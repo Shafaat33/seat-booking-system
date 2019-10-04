@@ -1,0 +1,23 @@
+{
+  "name": "react-projects",
+  "version": "1.0.0",
+  "description": "seat reservation project with react express and mongoDb",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix seat-reservations",
+    "dev": "concurrently \"npm run server\" \"npm run seat-reservations\""
+  },
+  "author": "Muhammad shafaat",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
